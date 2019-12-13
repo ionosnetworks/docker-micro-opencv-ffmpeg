@@ -116,6 +116,7 @@ RUN \
 	make install && \
 	cd /tmp && \
 	rm -rf ${DIR} && \
+	rm -rf ${CONTRIB_DIR} && \
 
 	# Cleaning up
 	apk del build-deps && \
