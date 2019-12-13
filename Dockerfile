@@ -76,12 +76,15 @@ RUN \
 	# PIP
 	pip install --no-cache-dir \
 	Cython==0.29.4 \
-	numpy==1.16.1 \
+	numpy==1.17.4 \
 	Pillow==5.4.1 \
+	requests \
+	flask \
+	zeroconf \
 	av==6.1.2 && \
 
 	## OpenCV
-	export OPENCV_VERSION=3.4.5 \
+	export OPENCV_VERSION=4.1.2 \
 	export PYTHON_VERSION=`python -c 'import platform; print(".".join(platform.python_version_tuple()[:2]))'` \
 	export CC=/usr/bin/clang \
 	export CXX=/usr/bin/clang++ && \
