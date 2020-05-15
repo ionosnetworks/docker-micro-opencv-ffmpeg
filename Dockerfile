@@ -3,6 +3,7 @@ MAINTAINER Ondrej Barta <ondrej@ondrej.it>
 
 RUN \
 	echo http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
+	echo http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
 	apk update && \
 	apk add \
 	bash \
