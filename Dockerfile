@@ -81,6 +81,8 @@ RUN \
 	requests \
 	flask \
 	zeroconf \
+	websockets \
+	inotify \
 	av==6.1.2 && \
 
 	## OpenCV
